@@ -1,0 +1,25 @@
+<h2>Dar de alta cliente</h2>
+
+<form (ngSubmit)="guardarCliente()" #clienteForm="ngForm">
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" id="nombre" class="form-control" name="nombre" [(ngModel)]="nuevoCliente.nombre" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" id="email" class="form-control" name="email" [(ngModel)]="nuevoCliente.email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="estado" class="form-label">Estado</label>
+    <select id="estado" class="form-select" name="estado" [(ngModel)]="nuevoCliente.estado" required>
+      <option value="Activo">Activo</option>
+      <option value="Inactivo">Inactivo</option>
+    </select>
+  </div>
+
+  <button class="btn btn-success" type="submit" [disabled]="!clienteForm.form.valid">
+    Guardar
+  </button>
+</form>
