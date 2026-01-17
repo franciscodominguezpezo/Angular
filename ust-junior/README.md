@@ -1,59 +1,63 @@
-# UstJunior
+UST Junior Frontend Project
+📌 Descripción
+Este proyecto ha sido desarrollado como parte de mi postulación al puesto de Desarrollador/a Frontend en UST, orientado a demostrar conocimientos sólidos en JavaScript, Angular y construcción de interfaces de usuario siguiendo buenas prácticas de desarrollo frontend.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+La aplicación simula una pequeña plataforma de gestión de clientes, enfocada en la capa de presentación, interacción con el usuario y organización del código.
 
-## Development server
+🛠️ Tecnologías utilizadas
+Angular (Standalone Components)
+TypeScript / JavaScript
+Bootstrap 5 (estilos y maquetación)
+SweetAlert2 (feedback visual al usuario)
+Arquitectura modular y componentes reutilizables
+🧩 Estructura del proyecto
+El proyecto está organizado siguiendo una estructura clara y escalable:
 
-To start a local development server, run:
+src/
+ ├── app/
+ │   ├── components/
+ │   │   ├── home/        # Landing / presentación del proyecto
+ │   │   ├── clientes/    # Listado de clientes
+ │   │   └── formulario/  # Alta de nuevos clientes
+ │   ├── core/
+ │   │   └── services/    # Servicio mock de datos
+ │   └── app.routes.ts    # Configuración de rutas
+ └── main.ts              # Bootstrap de la aplicación
+🏠 Home (Landing)
+La aplicación cuenta con una landing inicial que contextualiza el proyecto y la postulación, permitiendo al usuario acceder a las funcionalidades principales mediante navegación.
 
-```bash
+👥 Gestión de clientes
+Visualización de un listado de clientes
+Alta de nuevos clientes mediante formulario
+Validación de campos obligatorios
+Feedback visual de errores y acciones exitosas
+Los datos se gestionan mediante un servicio mock, simulando la interacción con un backend real.
+
+🧪 Validaciones y UX
+Validación de formularios en lógica y vista
+Control de errores antes de persistir datos
+Mensajes claros al usuario mediante SweetAlert
+🚀 Objetivo del proyecto
+El objetivo principal es demostrar:
+
+Capacidad para traducir requisitos y maquetas a código funcional
+Construcción de la capa de presentación
+Uso de Angular moderno (standalone)
+Organización del código y buenas prácticas
+Enfoque en experiencia de usuario
+▶️ Ejecución del proyecto
+npm install
 ng serve
-```
+La aplicación estará disponible en:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+http://localhost:4200
+📌 Notas finales
+Este proyecto está orientado a un contexto de evaluación técnica y puede ampliarse fácilmente con:
 
-## Code scaffolding
+Integración con backend real
+Autenticación y guards
+Formularios reactivos
+Testing unitario
+Gracias por su tiempo y consideración.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Paco Desarrollador Frontend Junior
